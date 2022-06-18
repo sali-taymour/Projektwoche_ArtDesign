@@ -1,0 +1,169 @@
+@media screen and (max-width: 1024px) {
+  .port_martin_body {
+    height: 100%;
+  }
+
+  .port_martin_slider {
+    left: 92vw;
+  }
+
+  .port_martin_div {
+    min-height: 40vh;
+  }
+
+  .port_martin_slider:hover {
+    transform: translateX(-85%);
+  }
+
+  /* SHOP */
+
+  .shop_main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .shop_container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .port_martin_body {
+    height: 100%;
+  }
+
+  .port_martin_slider {
+    left: 90vw;
+  }
+
+  .port_martin_div {
+    min-height: 40vh;
+  }
+
+  .port_martin_img {
+    width: 40%;
+  }
+
+  .port_martin_img_medium {
+    width: 40%;
+  }
+
+  .port_martin_img_medium img {
+    width: 100%;
+  }
+
+  .port_martin_content {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .port_martin_respon {
+    width: 100%;
+  }
+
+  .port_martin_content2 {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .port_martin_slider:hover {
+    transform: translateX(-80%);
+  }
+
+  .port_martin_design {
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .port_martin_body {
+    height: 100%;
+  }
+
+  .port_martin_slider {
+    left: 88vw;
+  }
+
+  .port_martin_img {
+    width: 100%;
+  }
+
+  .port_martin_img_medium {
+    width: 100%;
+  }
+
+  .port_martin_img_medium img {
+    width: 100%;
+  }
+
+  .port_martin_div {
+    padding: 4rem 2rem 5rem 2rem;
+  }
+
+  .port_martin_content {
+    width: 100%;
+    padding: 0.5rem;
+    padding-right: 5rem;
+  }
+
+  .port_martin_content2 {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .port_martin_nav {
+    height: 16rem;
+    font-size: 2.5rem;
+  }
+
+  #port_martin_dropdown {
+    font-size: 1.8rem;
+  }
+
+  .port_martin_btn {
+    width: 9rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+  }
+
+  .port_martin_slider_content {
+    width: 100%;
+  }
+
+  .port_martin_slider_img {
+    width: 100%;
+  }
+
+  .port_martin_slider_video {
+    width: 30%;
+  }
+
+  .port_martin_slider_video {
+    width: 80%;
+    border: solid 1px;
+  }
+
+  .port_martin_slider_video video {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .port_martin_design {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .shop_container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #spacer {
+    width: 10%;
+  }
+}

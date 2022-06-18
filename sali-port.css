@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(139, 132, 132); */
+}
+:root {
+  font-size: 62.5%;
+  --lgray: #f7ecc9;
+  --mgray: #b0a890;
+  --mdgray: #908bb6;
+  --ddark: #0c0d0f;
+  --mdark: #131415;
+  --ldark: #262728;
+
+  --content-width: 80%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Kalam', cursive;
+  background-color: var(--ddark);
+  color: var(--mgray);
+  
+}
+header {
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 1rem 0;
+}
+nav a {
+  display: block;
+  width: 5em;
+  text-decoration: none;
+  color: var(--lgray);
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  display: block;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+nav ul li a:hover{
+    background-color: var(--ldark);
+    
+}
+
+.main-kunst {
+  width: var(--content-width);
+  margin: 0 auto;
+ background-color: var(--ddark);
+  border-radius: 1.6rem;
+  padding: 4rem 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#kunst-h1 {
+  text-align: center;
+  font-size: 5rem;
+  padding :1rem ;
+  color: var(--mgray);
+}
+
+.haubt-bild {
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+   
+    
+
+}
+
+.haubt-bild img{
+    display: block;
+    
+}
+
+#haubt-bild {
+  width: 100%;
+  min-width: 25rem;
+  
+}
+
+.kunst-1cont, .kunst-2cont{
+    padding: 3rem ;
+   
+    display:flex;
+    justify-content: space-between;
+
+}
+
+   
+    .kunst-2cont .kunst-2bild:nth-of-type(2) {
+        transform: rotate(5deg);
+      }  
+    
+
+.kunst-1bild img, .kurse img{
+    width: 40rem;
+    display: block;
+
+}
+.kunst-2bild img{
+    width: 30rem;
+    display: block;
+
+}
+
+
+
+.kunst-1text {
+width:40rem ;
+font-size: 2.5rem;
+display:flex;
+justify-content: center;
+align-items: center;
+line-height: 5rem;
+}
+
+.kunst-kontact{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    text-decoration: none;
+    
+
+    
+}
+.kunst-kontact div{
+    width: 30%;
+    
+}
+.kunst-kontact a{
+    text-decoration: none;
+    color: var(--mdgray);
+}
+#Expressive{
+    font-size: 10rem;
+    line-height: 2;
+    color: var(--ldark);
+}
+#Expressive1{
+    font-size: 6rem;
+    line-height: 2;
+    color: var(--ldark);
+}
+.kunst-footer{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+   
+    width: 100%;
+    bottom: 0;
+    
+}
+.kunst-footer a:hover{
+    background-color: var(--ldark);
+    border-radius: 50%;
+}
+
+ion-icon{
+    padding: 3rem;
+    vertical-align:middle;
+  
+    color: lightcoral;
+  font-size: 4rem;
+  
+ 
+ } 
+  [name="logo-youtube"]{
+      color: rgb(193, 33, 33);
+      
+
+  }
+  [name="logo-facebook"]{
+      color: rgb(74, 74, 169);
+
+  }
+
+
+
+
+
+
+
+.card-container {
+  width: 60rem;
+  height: 60rem;
+ 
+}
+
+.card-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  perspective: 1000px;
+}
+
+
+.front {
+   
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .back {
+   
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+  }
+  
+  .card-container:hover .front {
+    transform: rotateY(180deg);
+  }
+  .card-container:hover .back {
+    transform: rotateY(360deg);
+  }
+  
+  .kunst-2cont .kunst-2bild:nth-child(odd){
+    transition: 2s;
+}
+
+.kunst-2cont .kunst-2bild:nth-child(odd):hover {transform:  scale(0.5) rotate(10deg) ;
+  
+}
+
+
+@media screen and (max-width: 768px) 
+{
+    .kunst-1text, .kunst-1cont, .haubt-bild, .kunst-2cont, .kunst-kontact {flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }  
+   
+    .kunst-2cont .kunst-2bild:nth-of-type(2) {
+        transform: rotate(0deg);
+      }  
+     
+
+
+ 
+      .card-container, .display {
+          display: none;
+      }
+      .kunst-kontact{
+          font-size: 1.5rem;
+          width: 100%;
+      }
+}
+

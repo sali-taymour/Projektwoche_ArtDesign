@@ -1,0 +1,35 @@
+/*Empty*/
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  margin-top: auto;
+}
+
+label[for="merch"] {
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+}
+
+.shop_input_merch
+{
+  height: 3.5rem;
+}
+
+.shop_merch_btn {
+  color: #141414;
+  font-size: 2.5rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+}
+
+.shop_merch_btn:hover {
+  color: #eee;
+}

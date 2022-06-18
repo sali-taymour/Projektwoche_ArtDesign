@@ -1,0 +1,120 @@
+nav {
+  background-color: #262728;
+  font-size: 2.5rem;
+  padding: 0.3rem 3rem 0 3rem;
+  z-index: 3;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+#spacer {
+  width: 30%;
+}
+
+ul li,
+a {
+  color: #dcdcdc;
+  font-weight: 500;
+  list-style-type: none;
+  text-decoration: none;
+  padding-bottom: 0.4rem;
+}
+
+ul li a:hover {
+  color: #eee;
+  font-weight: 500;
+  list-style-type: none;
+  text-decoration: underline 0.1rem #c40000;
+  text-underline-offset: 0.4rem;
+  transition: 1.5s;
+}
+
+.dropdown_container {
+  position: relative;
+  transition: 7s ease-in-out;
+  padding: 0.4rem 0;
+  z-index: 1;
+}
+
+.dropdown_container:hover #dropdown {
+  height: auto;
+  opacity: 1;
+}
+
+#dropdown {
+  background-color: #262728;
+  width: 13rem;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  overflow: hidden;
+  padding: 0.2rem 1rem;
+  opacity: 0;
+  border-radius: 0.5rem;
+}
+
+.drop-2
+{
+  width: 17rem;
+  font-size: 2rem;
+}
+
+.dropdown li a:hover {
+  text-decoration: underline 0.1rem #c40000;
+  text-underline-offset: 0.2rem;
+}
+
+button {
+  background-color: transparent;
+  color: #eee;
+  width: 9.5rem;
+  height: 3.5rem;
+  font-family: "Teko", sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 0.05rem;
+  border: solid 1px #aaa;
+  border-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: #444;
+  border-color: #c40000;
+  transition: 1.5s;
+}
+
+/* Portfolio Martin*/
+
+.port_martin_nav {
+  background-color: #262626;
+  width: 100%;
+  height: 16rem;
+  font-size: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#port_martin_dropdown {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.port_martin_nav_btn {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.port_martin_btn {
+  width: 11rem;
+  height: 5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+}

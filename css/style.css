@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&family=Teko:wght@300;400;500;600;700&display=swap");
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Teko", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background-color: 121212;
+  color: #eee;
+  width: 100%;
+  font-family: "Bebas Neue", cursive;
+  text-shadow: 3px 3px #555;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-top: 0.5rem;
+}
+
+h2 {
+  background-color: #141414;
+  font-size: 3rem;
+  border: solid 1px;
+  padding-top: 2rem;
+}
+
+header {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+
+.header_left {
+  width: 7%;
+}
+
+.header_left img {
+  width: 80%;
+}
+
+.header_mid {
+  width: 85%;
+}
+
+/* Content */
+
+main {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.container {
+  width: 20rem;
+  height: 20rem;
+  margin: 0.5rem;
+  position: relative;
+}
+
+.infocard,
+.backface,
+.creatorcard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.infocard img,
+.creatorcard img {
+  width: 100%;
+}
+
+.backface {
+  background-color: #ca8a12;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  line-height: 1.3rem;
+  position: absolute;
+  transform: rotateX(180deg);
+}
+
+.bf_button {
+  width: 80%;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 10%;
+}
+
+.backface p,
+.backface button {
+  color: #fff;
+}
+
+.container:hover .infocard {
+  animation: flip_front 60s;
+  perspective: 20rem;
+  -moz-perspective: 20rem;
+  -webkit-perspective: 10rem;
+}
+
+.container:hover .backface {
+  animation: flip_back 60s;
+  perspective: 20rem;
+  -moz-perspective: 20rem;
+  -webkit-perspective: 10rem;
+}
+
+css-slides img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  animation: fade 12s infinite;
+  opacity: 0;
+}
+
+#contact {
+  background-color: #11005f44;
+  position: absolute;
+  bottom: 8rem;
+  right: 1.5rem;
+  color: #eee;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  transition: 1.2s;
+  z-index: 1;
+}
+
+#contact:hover {
+  transform: scale(1.5);
+  background-color: #11005fdd;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+#contact a {
+  font-size: 0.7rem;
+  display: none;
+}
+
+#contact a:hover {
+  color: #ffbc65;
+}
+
+#contact:hover a {
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  background-color: #12121299;
+  color: #eee;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 8rem;
+  position: relative;
+  bottom: 0rem;
+}
+
+footer #icon {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+footer li {
+  line-height: 0.9rem;
+}
+
+footer li:hover {
+  color: #7a01c0;
+}
+
+.footer_content_container {
+  background-color: #121212;
+  font-size: 1.6rem;
+  width: 100%;
+  display: none;
+  padding: 0.4rem 4rem;
+  position: fixed;
+  left: 0;
+  bottom: 5rem;
+  border-top: solid 3px #141414;
+
+  /* transform: translateY(150%); */
+}
+
+footer:hover .footer_content_container {
+  display: block;
+  position: fixed;
+  bottom: 6rem;
+  /* animation: 2s; */
+  transform: translateY(80%);
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_content_container ul {
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+#right {
+  display: flex;
+  justify-content: end;
+}
+
+#right li {
+  margin-left: 0.4rem;
+}
+
+#copy {
+  font-size: 1.6rem;
+}
+
+/* Persönliche Seite Martin */
+
+.port_martin_body {
+  background-color: #eeeeee;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 2rem;
+  width: 100vw;
+  margin: auto;
+  box-shadow: 0;
+  position: relative;
+  box-shadow: none;
+  overflow-x: hidden;
+}
+
+select {
+  position: absolute;
+  top: 1rem;
+  right: -2rem;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  border-radius: 2rem;
+}
+
+.port_martin_slider {
+  background-color: #121212;
+  position: absolute;
+  left: 94.5vw;
+  top: 16rem;
+  transition: 3s;
+}
+
+.port_martin_slider:hover {
+  transform: translateX(-90%);
+}
+
+.port_martin_div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 50vh;
+  padding: 5rem 10rem 5rem 5rem;
+}
+
+#port_martin_slider_info {
+  color: #eee;
+  font-size: 4.5rem;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  position: absolute;
+  top: 47%;
+  left: -7rem;
+}
+
+.port_martin_slider_container {
+  color: #eee;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 5rem 1rem 10rem;
+}
+
+.port_martin_slider_content {
+  width: 50%;
+  padding: 2rem;
+}
+
+.port_martin_slider_img {
+  width: 50%;
+}
+
+.port_martin_slider_img img {
+  width: 100%;
+}
+
+.port_martin_design {
+  width: 20%;
+  padding: 2rem;
+}
+
+.port_martin_img {
+  width: 30%;
+}
+
+.port_martin_img img {
+  width: 80%;
+}
+
+.port_martin_img_medium {
+  width: 25%;
+}
+
+.port_martin_img_medium img {
+  width: 60%;
+}
+
+.port_martin_content {
+  width: 35%;
+  padding: 1.5rem;
+}
+
+.port_martin_content2 {
+  width: 70%;
+  padding: 1.5rem;
+}
+
+.port_martin_bot {
+  margin-top: auto;
+}
+
+.port_martin_bot i {
+  font-size: 5rem;
+  margin-left: 15rem;
+  animation: blinc 4s infinite;
+}

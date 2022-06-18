@@ -1,0 +1,93 @@
+.img1 {
+    animation-delay: 2s;
+  }
+  
+  .img2 {
+    animation-delay: 6s;
+  }
+  
+  .img3 {
+    animation-delay: 12s;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+@keyframes flip_front
+{
+    0%
+    {
+        transform: rotateY(0deg)
+    }
+
+    10%
+    {
+        transform: rotateY(180deg)
+    }
+
+    100%
+    {
+        transform: rotateY(180deg)
+    }
+}
+
+@keyframes flip_back
+{
+    0%
+    {
+        transform: rotateY(180deg)
+    }
+
+    10%
+    {
+        transform: rotateY(360deg)
+    }
+
+    100%
+    {
+        transform: rotateY(360deg)
+    }
+}
+
+@keyframes blinc
+{
+    0%
+    {
+        color: transparent;
+    }
+
+    25%
+    {
+        color: transparent;
+    }
+
+    50%
+    {
+        color: #ffff6c;
+    }
+
+    75%
+    {
+        color: #ff7b00;
+    }
+
+    100%
+    {
+        color: #c00000;
+    }
+}

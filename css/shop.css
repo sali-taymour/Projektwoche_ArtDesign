@@ -1,0 +1,211 @@
+:root {
+  --space: 1.5rem;
+  --width_img_: 80%;
+
+  --primary: #eee;
+  --secondary: #141414;
+}
+.body_moj {
+  background-color: #ffb6c1;
+}
+.shop_main_moj {
+  background-color: #ffb6c1;
+}
+
+.shop_main {
+  background-color: var(--primary);
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-shadow: none;
+  margin-top: 10rem;
+  padding-top: 3rem;
+  gap: var(--space);
+}
+
+.shop_container {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.shop_container_merch
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.shop_large {
+  width: 35%;
+}
+
+.shop_center_large {
+  width: 49%;
+  height: auto;
+  padding-bottom: 15rem;
+}
+
+.shop_container div
+{
+  width: 32%;
+  height: 80%;
+  margin: var(--space);
+}
+
+.shop_container_merch div {
+  width: 90%;
+  height: auto;
+  margin: var(--space);
+}
+
+.shop_container_merch div img {
+  border: solid black;
+  height: 30rem;
+}
+
+.shop_middle {
+  width: 50%;
+  height: 100%;
+}
+
+.shop_container .shop_middle {
+  width: 50%;
+  height: 100%;
+}
+​
+
+.shop_container .shop_middle_merch {
+  width: 100%;
+  height: auto;
+}
+
+.shop_container .shop_middle_merch img {
+  width: 70%;
+  height: 90%;
+  display: block;
+  margin: auto;
+}
+
+.shop_small {
+  height: 90%;
+}
+
+.shop_small_merch {
+  height: 80%;
+}
+
+.shop_small_merch img {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.shop_top_middle {
+  transform: scaleY(1.2);
+}
+.shop_top_middle_merch img {
+  width: 100%;
+  height: 100%;
+}
+
+.shop_middle_merch img {
+  width: 100%;
+  height: 100%;
+}
+
+.des_container {
+  width: 100%;
+  display: flex;
+  margin-left: 3rem;
+}
+
+.shop_des {
+  width: 50%;
+}
+
+#moj-art01 {
+  width: 96%;
+  height: 100%;
+}
+#moj-art02 {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  
+}
+#moj-art03 {
+  width: 85%;
+  height: 80%;
+  overflow: hidden;
+}
+.shop_container h2 {
+  font-size: 30px;
+  color: #ff1493;
+  background-color: #ffb6c1;
+  border: none;
+  text-align: center;
+  text-shadow: none;
+}
+.moj_nav {
+  background-color: #ff1493;
+}
+.header_moj {
+  background-color: #ffb6c1;
+}
+.button-moj {
+  background-color: transparent;
+  color: #f8f2f5;
+  background-color: #ff1493;
+  width: 8rem;
+  height: 2.5rem;
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  border: solid 1px #ff1493;
+  border-radius: 0.3rem;
+}
+
+.button-moj:hover {
+  background-color: #c71585;
+  border-color: #ff1493;
+  transition: 1.5s;
+}
+.input_moj {
+  height: 4rem;
+}
+.moj_font {
+  font-size: 4rem;
+  font-weight: bold;
+  width: 80%;
+}
+/* @media screen and (max-width: 1124px) {
+  .shop_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+} */
+/* 'sali' */
+.kunst1 img{
+  width: 80%;
+}
+
+.kunst2 img{
+  width: 20%;
+  color: var(--secondary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.shop_des_merch ul li {
+  color: var(--secondary);
+}
+.sali-body{background-color: #131415;
+   color: #b0a890;}

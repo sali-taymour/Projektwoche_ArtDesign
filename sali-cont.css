@@ -1,0 +1,193 @@
+input {
+  animation: feld 2s;
+}
+@keyframes feld {
+  0% {
+    transform: translate(-150px);
+  }
+  35% {
+    transform: translate(50px);
+  }
+  70% {
+    transform: translate(-25px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+#reg-btn {
+  animation: button 2s;
+}
+#reg-btn:hover {
+  transform: rotateY(360deg);
+}
+@keyframes button {
+  0% {
+    transform: translate(-150px);
+    transform: rotateY(180deg);
+  }
+}
+#mail {
+  animation: mail 1s;
+}
+
+#input-mail:hover #mail {
+  top: -5rem;
+  right: -5rem;
+  animation: mail 3s;
+}
+
+@keyframes mail {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(500px, -500px);
+  }
+}
+
+
+
+
+
+.reg-main 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-areas: "reg-sec-links reg-sec-reght";
+}
+
+@media screen and ( max-width:756px) {
+    .reg-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reg-sec-links{
+
+    z-index: -1;
+    max-height: 0px;
+    
+    }
+    .reg-sec-right, .reg-sec-links{
+        border-radius: 100px;
+    }
+
+    
+}
+
+.reg-img 
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: hard-light;
+}
+
+.reg-sec-links 
+{
+  /*  */
+  grid-area: 1/1/2/2;
+  background: linear-gradient(
+    225deg,
+    rgba(240, 190, 27, 0.651),
+    #19d54e70,
+    #e61515dc
+  );
+}
+
+.reg-sec-right 
+{
+  grid-area: reg-sec-reght;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: linear-gradient(225deg, #c53a1ee3, #48c26bb3, #c73131ea);
+}
+
+.reg-form label 
+{
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+
+  color: rgb(61, 51, 51);
+}
+.reg-form input 
+{
+  width: 20em;
+  height: 3em;
+  border-radius: 50px;
+  padding: rem;
+  margin: 1em;
+  background: rgb(216, 215, 215);
+  box-shadow: 1px 2px 2px rgb(47, 43, 43);
+}
+.reg-form input:hover 
+{
+  background-color: #bdca3c;
+}
+#reg-h3 
+{
+  padding: 2em;
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(61, 50, 50);
+}
+
+.reg-checkbox 
+{
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(51, 42, 42);
+}
+.reg-i i 
+{
+  padding: 1rem;
+  font-size: 2em;
+  border-radius: 50px;
+}
+#reg-btn 
+{
+  font-size: 2rem;
+  width: 18em;
+  height: 3em;
+  border-radius: 50px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 1em;
+  background: rgb(216, 215, 215);
+  box-shadow: 1px 2px 2px rgb(47, 43, 43);
+  background-color: #beb53c;
+  font-family: "Permanent Marker", cursive;
+}
+.reg-i i:hover
+ {
+  color: rgb(66, 29, 23);
+  background-color: rgb(74%, 71%, 24%);
+}
+#reg-btn:hover 
+{
+  background-color: #f37748;
+}
+
+input[id="plz"],
+label[for="plz"] 
+{
+  width: 12rem;
+}
+input[id="ort"],
+label[for="ort"] 
+{
+  width: 12rem;
+}
+
+label[for="ort"] 
+{
+  margin-left: 11.5rem;
+}
